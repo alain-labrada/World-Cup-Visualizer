@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Cup 2026 Classic Bracket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="classic.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="kicker">FIFA WORLD CUP 2026</p>
+        <h1>Round of 32 Bracket</h1>
+      </div>
+      <div class="actions">
+        <a href="index.html" class="link-btn">Radial View</a>
+        <button id="resetBtn" type="button">Reset Round of 32</button>
+      </div>
+    </header>
+
+    <main>
+      <p class="howto" id="howtoText">
+        Pick a winner by tapping a team in a match, then drag it or tap a highlighted target slot in the next round.
+      </p>
+      <section id="board" class="board" aria-label="Classic knockout bracket">
+        <svg id="lines" aria-hidden="true"></svg>
+        <div id="slots"></div>
+        <div id="center" class="center-cup" aria-live="polite">
+          <div class="cup">🏆</div>
+          <div class="winner-row">
+            <span id="winnerFlag">--</span>
+            <span id="winnerName"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="classic.js"></script>
+  </body>
+</html>

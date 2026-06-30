@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Cup Visualizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">FIFA World Cup</p>
+        <h1>Radial Flag Bracket</h1>
+      </div>
+      <div class="controls">
+        <button id="resetRound32Btn" type="button">Reset to Round of 32</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="bracket" class="bracket" aria-label="World Cup knockout bracket">
+        <div id="rings"></div>
+        <svg id="links" aria-hidden="true"></svg>
+        <div id="nodes"></div>
+        <div id="center" class="center-cup" aria-live="polite">
+          <div class="cup-mark">🏆</div>
+          <p id="winnerFlag" class="winner-flag">--</p>
+          <p id="winnerLabel">Winner TBD</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
