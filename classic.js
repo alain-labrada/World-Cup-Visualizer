@@ -198,12 +198,12 @@ function buildGeometry() {
 
   const x = mobile
     ? {
-      left: { round32: 8, round16: 23, quarter: 35, semi: 44, final: 46 },
-      right: { round32: 92, round16: 77, quarter: 65, semi: 56, final: 54 },
+      left: { round32: 8, round16: 23, quarter: 35, semi: 44, final: 44 },
+      right: { round32: 92, round16: 77, quarter: 65, semi: 56, final: 56 },
     }
     : {
-      left: { round32: 8, round16: 23, quarter: 36, semi: 45, final: 46 },
-      right: { round32: 92, round16: 77, quarter: 64, semi: 55, final: 54 },
+      left: { round32: 8, round16: 23, quarter: 36, semi: 45, final: 43 },
+      right: { round32: 92, round16: 77, quarter: 64, semi: 55, final: 57 },
     };
 
   const leftLevels = makeLevels(7, 93);
@@ -547,7 +547,6 @@ function drawPaths(geometry) {
   drawRoundPaths(geometry, "round32");
   drawRoundPaths(geometry, "round16");
   drawRoundPaths(geometry, "quarter");
-  drawRoundPaths(geometry, "semi");
 }
 
 function drawRoundPaths(geometry, round) {

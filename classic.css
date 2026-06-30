@@ -66,10 +66,6 @@ button,
   color: #121212;
 }
 
-.link-btn {
-  background: #d8deef;
-}
-
 main {
   padding: 0 0.45rem 0.8rem;
 }
@@ -144,8 +140,8 @@ main {
 }
 
 .slot.final {
-  width: 62px;
-  height: 34px;
+  width: 70px;
+  height: 38px;
 }
 
 .flag-fill {
@@ -177,14 +173,17 @@ main {
 .center-cup {
   position: absolute;
   left: 50%;
-  top: 62%;
+  top: 76%;
   transform: translateX(-50%);
   text-align: center;
 }
 
-.cup {
-  font-size: clamp(2.3rem, 7vw, 4rem);
-  line-height: 1;
+.cup-image {
+  width: clamp(44px, 9vw, 68px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35));
 }
 
 .winner-row {
@@ -226,8 +225,8 @@ main {
   }
 
   .slot.final {
-    width: 45px;
-    height: 25px;
+    width: 50px;
+    height: 28px;
   }
 
   .link {
@@ -235,7 +234,7 @@ main {
   }
 
   .center-cup {
-    top: 64%;
+    top: 79%;
   }
 
   #winnerName {

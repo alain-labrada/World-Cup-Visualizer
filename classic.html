@@ -19,7 +19,6 @@
         <h1>Round of 32 Bracket</h1>
       </div>
       <div class="actions">
-        <a href="index.html" class="link-btn">Radial View</a>
         <button id="resetBtn" type="button">Reset Round of 32</button>
       </div>
     </header>
@@ -32,7 +31,14 @@
         <svg id="lines" aria-hidden="true"></svg>
         <div id="slots"></div>
         <div id="center" class="center-cup" aria-live="polite">
-          <div class="cup">🏆</div>
+          <img
+            class="cup-image"
+            src="assets/fifa-cup.png"
+            alt="FIFA World Cup Trophy"
+            loading="lazy"
+            decoding="async"
+            onerror="this.onerror=null;this.src='assets/fifa-trophy.svg';"
+          />
           <div class="winner-row">
             <span id="winnerFlag">--</span>
             <span id="winnerName"></span>
